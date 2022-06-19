@@ -1,7 +1,7 @@
 from flask import render_template, Flask
 
 
-app=Flask(__name__)
+app=Flask(__name__, static_url_path='/static')
 
 
 @app.route("/", methods=['GET', 'POST'])
